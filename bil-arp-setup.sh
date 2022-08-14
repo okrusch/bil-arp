@@ -20,8 +20,8 @@ echo "Downloading and installing dependecies"
 
 sudo apt update -y
 
-sudo apt install python3-acme python3-certbot python3-mock python3-openssl python3-pkg-resources python3-pyparsing python3-zope.interface python3-certbot-nginx nginx nginx-extras nginx-common -y -f
-sudo apt install --reinstall  python3-acme python3-certbot python3-mock python3-openssl python3-pkg-resources python3-pyparsing python3-zope.interface python3-certbot-nginx nginx nginx-extras nginx-commo>
+sudo apt install python3-acme python3-certbot python3-mock python3-openssl python3-pkg-resources python3-pyparsing python3-zope.interface python3-certbot-nginx nginx  -y -f
+sudo apt install --reinstall  python3-acme python3-certbot python3-mock python3-openssl python3-pkg-resources python3-pyparsing python3-zope.interface python3-certbot-nginx nginx
 sudo systemctl reload nginx.service
 sudo sed -i 's/80 default_server/15080/g' /etc/nginx/sites-available/default
 
