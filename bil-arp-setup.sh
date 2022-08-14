@@ -33,7 +33,7 @@ echo "Dependencies installed succesfully"
 read -p "Press enter to proceed"
 
 sudo touch /etc/nginx/sites-available/bilpay
-sudo cp /home/citadel/citadel/bil_arp/bil_demo.txt /etc/nginx/sites-available/bilpay
+sudo cp /home/citadel/citadel/bil_arp/btcpay-nginx-template /etc/nginx/sites-available/bilpay
 sudo chmod u+w /etc/nginx/sites-available/bilpay
 sudo chmod a+w /etc/nginx/sites-available/bilpay
 
